@@ -1,0 +1,16 @@
+# Hiden file system files
+.DS_Store
+
+# Backup files
+*.bak
+*.tmp
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Executables
+*.exe
+*.out
