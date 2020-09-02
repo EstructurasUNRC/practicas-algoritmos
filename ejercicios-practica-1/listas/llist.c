@@ -122,11 +122,11 @@ list_t end( list_t llist, int element )
 	return llist;
 }
 
-list_t bhd( list_t llist )
+int bhd( list_t llist )
 {
 	if ( is_empty( llist ) )
 	{
-		return NULL;
+		return -1;
 	}
 
 	linkable_t cursor = llist->head;
@@ -137,7 +137,7 @@ list_t bhd( list_t llist )
 
 	llist->size = (llist->size) - 1;
 
-	return llist;
+	return 0;
 }
 
 int at( list_t llist, int position )

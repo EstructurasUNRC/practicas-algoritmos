@@ -47,7 +47,7 @@ int at( list_t list, int position );
 // removes the head of the list (deletes its first element)
 /*  0 if successful
  * -1 if the list is empty */
-list_t bhd( list_t list );
+int bhd( list_t list );
 
 // deletes an element in a particular position in the list
 /*  0 if successful
