@@ -87,9 +87,9 @@ public interface ArbolBinario<T> {
    public int altura();
    
    /**
-   * Permite consultar si el árbol está vacío o no.#
+   * Permite consultar si el árbol está vacío o no.
    * <p>
-   * Este método es equivalente a <pre>elementos() == 0</pre> y <pre>altura() == 0</pre>.
+   * Este método es equivalente a <pre>elementos() == 0</pre> y <pre>altura() == 0</pre>
    * @return {@code true} sii este árbol está vacío.
    */
    public boolean esVacio();
@@ -97,7 +97,7 @@ public interface ArbolBinario<T> {
    /**
    * Retorna una lista con los elementos almacenados en este árbol usando un recorrido {@code INORDER}.
    * <p>
-   * Llamar a este método es equivalente a llamar a <pre>aLista(Orden.INORDER)</pre>.
+   * Llamar a este método es equivalente a llamar a <pre>aLista(Orden.INORDER)</pre>
    * @return retorna una lista con los elementos de este árbol según un recorrido {@code INORDER}.
    */
    public List<T> aLista();
