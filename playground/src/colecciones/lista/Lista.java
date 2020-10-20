@@ -14,7 +14,7 @@ public interface Lista<T> {
 	* @param elem el elemento a agregar
 	* @param indice el indice donde se agrega el elemento
 	* @return {@code true} sii el elemento pudo ser agregado
-	* @throws IndexOutOfBoundsException si {@code indice} < {@value 0}
+	* @throws IndexOutOfBoundsException si {@code indice} &lt; {@code 0}
 	*/
 	public boolean insertar(T elem, int indice);
 

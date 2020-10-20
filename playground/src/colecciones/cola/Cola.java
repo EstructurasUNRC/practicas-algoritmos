@@ -3,8 +3,7 @@ package colecciones.cola;
 
 /**
 * Esta clase representa una cola de objetos <b>first in first out (FIFO)</b> donde el primer elemento insertado es el primero que se accede.
-* Las operaciones ofrecidas por cualquier implementación de esta clase son:
-* <p>
+* Las operaciones disponibles para esta estructura son:
 * <ul>
 *   <li> encolar	: Encola un nuevo elemento y evaluar si fue encolado con exito</li>
 *   <li> desencolar	: Desencola y retorna el primer elemento</li>

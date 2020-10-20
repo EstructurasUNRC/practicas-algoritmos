@@ -51,9 +51,9 @@ public class ListaEncadenada<T> implements Lista<T> {
 
 	@Override
 	public T eliminar(int indice) {
-		assert repOK() && nth(raiz, indice) != null
-		&& guardar(nth(raiz, indice).elem(), obtenerId(this, "eliminar", "elemNth"));
-		&& guardar(nth(raiz, indice), obtenerId(this, "eliminar", "nodoNth"));
+		assert repOK() && nth(raiz, indice) != null : "Falló la precondición";
+		assert guardar(nth(raiz, indice).elem(), obtenerId(this, "eliminar", "elemNth"));
+		assert guardar(nth(raiz, indice), obtenerId(this, "eliminar", "nodoNth"));
 		throw new UnsupportedOperationException("Falta implementar");
 		//T resultado = ...		
 		//assert repOK()

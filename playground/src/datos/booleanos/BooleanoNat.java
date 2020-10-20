@@ -2,7 +2,7 @@ package datos.booleanos;
 
 /**
 * Implementacion de la interface Booleano con  valores Nat. 
-* 0 = Falso, (> 0) = Verdadero
+* 0 = Falso, (&gt; 0) = Verdadero
 * Las operaciones de esta implementación no modifican this.
 */
 public class BooleanoNat implements Booleano {

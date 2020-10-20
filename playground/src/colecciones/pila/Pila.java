@@ -3,7 +3,6 @@ package colecciones.pila;
 /**
 * Esta clase representa una pila de objetos <b>first in last out (FILO)</b> donde el primer elemento insertado es el último que se accede.
 * Las operaciones ofrecidas por cualquier implementación de esta clase son:
-* <p>
 * <ul>
 *   <li> tope		: Accede al tope de una pila no vacía sin modificar a la misma</li>
 *   <li> apilar		: Apila un nuevo elemento en la pila y retorna si la operación fue exitosa</li>

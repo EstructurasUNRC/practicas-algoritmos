@@ -1,5 +1,8 @@
 package asserts;
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class AlmacenValores {
 
 	private static Map<String, Object> valoresGuardados = new HashMap<>();
@@ -36,7 +39,7 @@ public class AlmacenValores {
 		return valoresGuardados.get(id);
 	}
 
-	public String obtenerId(Object instancia, String operacion, String nombreValor) {
+	public static String obtenerId(Object instancia, String operacion, String nombreValor) {
 		if (instancia == null)
 			throw new IllegalArgumentException("la instancia no puede ser nula");
 		if (operacion == null || operacion.trim().isEmpty())

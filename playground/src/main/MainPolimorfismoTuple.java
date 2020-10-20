@@ -24,7 +24,7 @@ public class MainPolimorfismoTuple {
 		//tupleGen.setSecond(new Integer(3)); //esto no compila
 		System.out.println(tupleGen.toString());
 		//Escribir una clase sin contenido usualmente no es buena idea, pero TupleGenSame es un ejemplo de como extender una clase con genericidad
-		TupleGenSame<String> tupleGenSame = new TupleGenSame("Hola", "Mundo!");
+		TupleGenSame<String> tupleGenSame = new TupleGenSame<>("Hola", "Mundo!");
 		System.out.println(tupleGenSame.toString());
 	}
 

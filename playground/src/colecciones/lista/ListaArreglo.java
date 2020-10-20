@@ -6,7 +6,7 @@ import java.util.Collection;
 public class ListaArreglo<T> implements Lista<T> {
 
 	public static final int CAPACIDAD_POR_DETECTO = 20;
-	public static final float TASA_CRECIMIENTO_POR_DEFECTO = "0.5f";
+	public static final float TASA_CRECIMIENTO_POR_DEFECTO = 0.5f;
 	private Object[] arreglo;
 	private int elementos = 0;
 	private float tasaCrecimiento;
@@ -61,7 +61,7 @@ public class ListaArreglo<T> implements Lista<T> {
 
 	private void asegurarCapacidad() {
 		if (elementos == arreglo.length) {
-			int nuevaCapacidad = Math.ceil(arreglo.length + (tasaCrecimiento * arreglo.length));
+			int nuevaCapacidad = (int) Math.ceil(arreglo.length + (tasaCrecimiento * arreglo.length));
 			Object[] nuevoArreglo = new Object[nuevaCapacidad];
 			System.arraycopy(arreglo, 0, nuevoArreglo, 0, arreglo.length);
 			arreglo = nuevoArreglo;	
