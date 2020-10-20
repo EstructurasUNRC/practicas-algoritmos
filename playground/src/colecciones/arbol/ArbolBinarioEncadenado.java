@@ -50,7 +50,7 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    */
    public static <E> ArbolBinarioEncadenado<E> arbol(E raiz, ArbolBinario<E> subArbolIzquierdo, ArbolBinario<E> subArbolDerecho) {
       ArbolBinarioEncadenado<E> nuevoArbol = new ArbolBinarioEncadenado<>(raiz, transformarEnArbolEncadenado(subArbolIzquierdo).raiz, transformarEnArbolEncadenado(subArbolDerecho).raiz);
-      nuevoArbol.elementos += subArbolIzquierdo.elementos() + subArbolDerecho.elementos();
+      nuevoArbol.elementos += (subArbolIzquierdo==null?0:subArbolIzquierdo.elementos()) + (subArbolDerecho==null?0:subArbolDerecho.elementos());
       return nuevoArbol;
    }
    
