@@ -18,8 +18,6 @@ import java.util.LinkedList;
 public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
 
    private NodoBinario<T> raiz;
-   private int elementos;
-
 
    /**
    * Construye un nuevo árbol vacío.
@@ -50,7 +48,6 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    */
    public static <E> ArbolBinarioEncadenado<E> arbol(E raiz, ArbolBinario<E> subArbolIzquierdo, ArbolBinario<E> subArbolDerecho) {
       ArbolBinarioEncadenado<E> nuevoArbol = new ArbolBinarioEncadenado<>(raiz, transformarEnArbolEncadenado(subArbolIzquierdo).raiz, transformarEnArbolEncadenado(subArbolDerecho).raiz);
-      nuevoArbol.elementos += (subArbolIzquierdo==null?0:subArbolIzquierdo.elementos()) + (subArbolDerecho==null?0:subArbolDerecho.elementos());
       return nuevoArbol;
    }
    
@@ -67,7 +64,6 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
       this.raiz = NodoBinario.nuevaHoja(raiz);
       this.raiz.izquierdo(subArbolIzquierdo);
       this.raiz.izquierdo(subArbolDerecho);
-      this.elementos = raiz == null?0:1;
    }
    
    /**{@inheritDoc}*/
@@ -109,7 +105,7 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    /**{@inheritDoc}*/
    @Override
    public int elementos() {
-      return elementos;
+      throw new UnsupportedOperationException("TODO: implementar");
    }
    
    /**{@inheritDoc}*/
