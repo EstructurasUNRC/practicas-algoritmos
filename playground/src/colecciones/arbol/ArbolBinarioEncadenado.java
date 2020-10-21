@@ -54,8 +54,17 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    /* (non-Javadoc)
    * Convierte un ArbolBinario a un ArbolBinarioEncadenado.
    */
+   @SuppressWarnings("unchecked")
    private static <E> ArbolBinarioEncadenado<E> transformarEnArbolEncadenado(ArbolBinario<E> arbol) {
-      throw new UnsupportedOperationException("TODO: implementar");
+      if (arbol instanceof ArbolBinarioEncadenado<?>)
+         return (ArbolBinarioEncadenado<E>) arbol;
+      if (arbol.esVacio())
+         return arbolVacio();
+      if (arbol.elementos() == 1)
+         return hoja(arbol.raiz());
+      ArbolBinarioEncadenado<E> izquierdo = transformarEnArbolEncadenado(arbol.subArbolIzquierdo());
+      ArbolBinarioEncadenado<E> derecho = transformarEnArbolEncadenado(arbol.subArbolDerecho());
+      return new ArbolBinarioEncadenado<E>(arbol.raiz(), izquierdo.raiz, derecho.raiz);
    }
    
    private ArbolBinarioEncadenado(T raiz, NodoBinario<T> subArbolIzquierdo, NodoBinario<T> subArbolDerecho) {
@@ -87,6 +96,8 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    /**{@inheritDoc}*/
    @Override
    public T raiz() {
+      if (esVacio())
+         return IllegalStateException("el árbol está vacío");
       return raiz.valor();
    }
 

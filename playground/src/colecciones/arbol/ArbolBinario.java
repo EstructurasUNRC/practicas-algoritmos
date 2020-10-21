@@ -55,6 +55,7 @@ public interface ArbolBinario<T> {
    /**
    * Retorna el valor asociado a la raíz del árbol.
    * @return la raíz
+   * @throws IllegalStateException sii el árbol estǽ vacío
    */
    public T raiz();
 
