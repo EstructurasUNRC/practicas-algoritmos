@@ -5,9 +5,9 @@ import java.util.List;
 /**
 * Árbol binario, representa una estructura de nodos, cada uno con un valor {@code T} tal que:
 * <ul>
-* <li>Cada nodo tiene a lo sumo un nodo a su izquierda y un nodo a su derecha, los cuales deben ser distintos</li>
-* <li>Un nodo no puede ser alcanzado a partir de sus descendientes</li>
-* <li>Todo nodo debe ser alzanzable desde el nodo raíz del árbol, salvo en un árbol vacío sin nodos</li>
+* <li>Cada nodo tiene a lo sumo un nodo a su izquierda y un nodo a su derecha, los cuales deben ser distintos.</li>
+* <li>Un nodo no puede ser alcanzado a partir de sus descendientes.</li>
+* <li>Todo nodo que pertenece al árbol debe ser alzanzable desde el nodo raíz del mismo, salvo en un árbol vacío sin nodos.</li>
 * </ul>
 * @param T el tipo del valor asociado a cada nodo del árbol.
 */
