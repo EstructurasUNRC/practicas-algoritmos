@@ -17,6 +17,7 @@ import java.util.LinkedList;
 */
 public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
 
+
    private NodoBinario<T> raiz;
 
    /**
@@ -47,7 +48,9 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    * @return un nuevo árbol con una raíz con el valor {@code raiz} y los subarboles izquierdo y derecho correspondientes a los argumentos
    */
    public static <E> ArbolBinarioEncadenado<E> arbol(E raiz, ArbolBinario<E> subArbolIzquierdo, ArbolBinario<E> subArbolDerecho) {
-      ArbolBinarioEncadenado<E> nuevoArbol = new ArbolBinarioEncadenado<>(raiz, transformarEnArbolEncadenado(subArbolIzquierdo).raiz, transformarEnArbolEncadenado(subArbolDerecho).raiz);
+      ArbolBinarioEncadenado<E> izquierdo = subArbolIzquierdo==null?null:transformarEnArbolEncadenado(subArbolIzquierdo);
+      ArbolBinarioEncadenado<E> derecho = subArbolDerecho==null?null:transformarEnArbolEncadenado(subArbolDerecho);
+      ArbolBinarioEncadenado<E> nuevoArbol = new ArbolBinarioEncadenado<>(raiz, izquierdo.raiz, derecho.raiz);
       return nuevoArbol;
    }
    
