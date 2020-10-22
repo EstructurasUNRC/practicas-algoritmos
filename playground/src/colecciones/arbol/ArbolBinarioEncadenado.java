@@ -75,7 +75,7 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
          throw new IllegalArgumentException("raiz solo puede ser null cuando todos los argumentos son null");
       this.raiz = NodoBinario.nuevaHoja(raiz);
       this.raiz.izquierdo(subArbolIzquierdo);
-      this.raiz.izquierdo(subArbolDerecho);
+      this.raiz.derecho(subArbolDerecho);
    }
    
    /**{@inheritDoc}*/
@@ -100,7 +100,7 @@ public class ArbolBinarioEncadenado<T> implements ArbolBinario<T> {
    @Override
    public T raiz() {
       if (esVacio())
-         return IllegalStateException("el árbol está vacío");
+         throw new IllegalStateException("el árbol está vacío");
       return raiz.valor();
    }
 
