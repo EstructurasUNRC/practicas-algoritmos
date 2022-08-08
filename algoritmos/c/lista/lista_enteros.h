@@ -8,7 +8,7 @@ typedef struct estructura_lista* tipo_lista;
 //Retorna una lista vacía.
 tipo_lista crear( void );
 
-// La lista es vacia?
+// consulta si la lista es vacia
 int es_vacia( tipo_lista lista );
 
 // agrega un elemento al comienzo de la lista
@@ -28,7 +28,7 @@ tipo_lista fin( tipo_lista lista, int elemento );
  * -1 si la lista es vacia. */
 int eliminar_comienzo( tipo_lista lista );
 
-// elimina un elemento en un idice particular.
+// elimina un elemento en una posicion dada.
 /*  0 si es exitosa la operacion
  * -1 si la posicion es invalida o si la lista es vacia.*/
 int eliminar( tipo_lista lista, int posicion);
@@ -37,24 +37,22 @@ int eliminar( tipo_lista lista, int posicion);
 /* La posicion dada debe ser valida */
 int obtener( tipo_lista lista, int position );
 
-// la reversa de la lista.
+// retorna la reversa de la lista.
 tipo_lista reversa( tipo_lista lista );
 
-// la concatenacion de la lista
+// concatenacion de listas.
 tipo_lista concat( tipo_lista ini, tipo_lista cola );
 
-// la sub-lista comenzando en 'ini' y terminando en 'fin'
+// retorna la sub-lista comenzando en 'ini' y terminando en 'fin'
 tipo_lista sub( tipo_lista lista, int ini, int fin );
 
-// una copia de la lista
+// retorna una copia de la lista
 tipo_lista copia( tipo_lista lista );
 
-
-
-// el primer elemento de una lista no vacia.
+// retorna el primer elemento de una lista no vacia.
 int cabeza( tipo_lista lista );
 
-// todos los elementos de la lista menos el primero.
+// retorna todos los elementos de la lista menos el primero.
 tipo_lista cola( tipo_lista lista );
 
 // muestra el contenido de la lista en la salida estandar 'std'
