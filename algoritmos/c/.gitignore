@@ -1,0 +1,32 @@
+# Hiden file system files
+.DS_Store
+
+# Backup files
+*.bak
+*.tmp
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Executables
+*.exe
+*.out
+
+#Some of these are related to eclipse. So i keep them out of my repo
+.cproject
+.dep/
+.project
+.settings/
+
+#files being edited
+*~
+
+# make and build files
+*.lst
+*.eep
+*.lss
+*.map
+*.sym
