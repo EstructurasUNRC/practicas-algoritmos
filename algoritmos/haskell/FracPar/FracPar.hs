@@ -27,7 +27,3 @@ instance Fractional FracPar where -- | implementamos la division
     fromRational r =  (numerator r) :/ (denominator r)
    
 
--- | tambien implementamos el show
---instance Show FracPar where
---    show (p :\ q) = (fromInt p) \ (fromInt q)
-
