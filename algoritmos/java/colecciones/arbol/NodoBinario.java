@@ -23,7 +23,7 @@ public class NodoBinario<T>  {
     }
 
 
-    T setValor() {
+    T getValor() {
         return valor;
     }
 
