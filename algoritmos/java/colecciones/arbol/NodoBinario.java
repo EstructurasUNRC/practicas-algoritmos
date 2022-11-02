@@ -23,35 +23,35 @@ public class NodoBinario<T>  {
     }
 
 
-    T valor() {
+    T setValor() {
         return valor;
     }
 
-    void valor(T nuevoValor) {
+    void setValor(T nuevoValor) {
         valor = nuevoValor;
     }
 
-    NodoBinario<T> izquierdo() {
+    NodoBinario<T> getIzquierdo() {
         return izquierdo;
     }
 
-    void izquierdo(NodoBinario<T> nuevoIzquierdo) {
+    void setIzquierdo(NodoBinario<T> nuevoIzquierdo) {
         throw new UnsupportedOperationException("TODO: implementar");
     }
 
-    NodoBinario<T> derecho() {
+    NodoBinario<T> getDerecho() {
         return derecho;
     }
 
-    void derecho(NodoBinario<T> nuevoDerecho) {
+    void setDerecho(NodoBinario<T> nuevoDerecho) {
         throw new UnsupportedOperationException("TODO: implementar");
     }
 
-    public int altura() {
+    public int getAltura() {
         return altura;
     }
 
-    public void altura(int altura) {
+    public void setAltura(int altura) {
         this.altura = altura;
     }
 
