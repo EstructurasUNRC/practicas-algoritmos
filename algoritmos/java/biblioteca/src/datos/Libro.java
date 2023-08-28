@@ -60,7 +60,7 @@ public class Libro {
 	* @param titulo : el nuevo título de este Libro.
 	*/
 	public void titulo(String titulo) {
-		this.autor = titulo;
+		this.titulo = titulo;
 	}
 	
 	/**
@@ -89,7 +89,7 @@ public class Libro {
 	
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException("Debe implementar este método");
+                return "Titulo: " + this.titulo + "\nAutor: " + this.autor + "\nPaginas: " + this.nroPaginas + "\n"; 
 	}
 	
 	@Override
