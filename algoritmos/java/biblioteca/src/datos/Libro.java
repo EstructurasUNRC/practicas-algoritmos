@@ -89,7 +89,6 @@ public class Libro {
 	
 	@Override
 	public String toString() {
-                return "Titulo: " + this.titulo + "\nAutor: " + this.autor + "\nPaginas: " + this.nroPaginas + "\n"; 
 	}
 	
 	@Override
